@@ -1,0 +1,7 @@
+G:\Code\C#\NumberConverter\NumberConverter\bin\Debug\NumberConverter.exe.config
+G:\Code\C#\NumberConverter\NumberConverter\bin\Debug\NumberConverter.exe
+G:\Code\C#\NumberConverter\NumberConverter\bin\Debug\NumberConverter.pdb
+G:\Code\C#\NumberConverter\NumberConverter\obj\Debug\NumberConverter.csprojAssemblyReference.cache
+G:\Code\C#\NumberConverter\NumberConverter\obj\Debug\NumberConverter.csproj.CoreCompileInputs.cache
+G:\Code\C#\NumberConverter\NumberConverter\obj\Debug\NumberConverter.exe
+G:\Code\C#\NumberConverter\NumberConverter\obj\Debug\NumberConverter.pdb

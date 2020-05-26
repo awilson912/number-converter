@@ -1,0 +1,7 @@
+G:\Code\C#\Lorax\Lorax\bin\Debug\Lorax.exe.config
+G:\Code\C#\Lorax\Lorax\bin\Debug\Lorax.exe
+G:\Code\C#\Lorax\Lorax\bin\Debug\Lorax.pdb
+G:\Code\C#\Lorax\Lorax\obj\Debug\Lorax.csprojAssemblyReference.cache
+G:\Code\C#\Lorax\Lorax\obj\Debug\Lorax.csproj.CoreCompileInputs.cache
+G:\Code\C#\Lorax\Lorax\obj\Debug\Lorax.exe
+G:\Code\C#\Lorax\Lorax\obj\Debug\Lorax.pdb
