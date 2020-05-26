@@ -72,16 +72,16 @@ namespace NumberConverter
             int digitValue;
 
             if (char.IsDigit(character))
-                digitValue = character - DigitValue.START_DIGIT;
+                digitValue = character - (int)DigitValue.START_DIGIT;
             else if (character == PLUS_CHAR)
-                digitValue = DigitValue.PLUS_VALUE;
+                digitValue = (int)DigitValue.PLUS_VALUE;
             else if (character == SLASH_CHAR)
-                digitValue = DigitValue.SLASH_VALUE;
+                digitValue = (int)DigitValue.SLASH_VALUE;
             else
-                digitValue = character - DigitValue.NUMBER_TO_CHAR;
+                digitValue = character - (int)DigitValue.NUMBER_TO_CHAR;
 
             if (character >= 'a')
-                digitValue -= DigitValue.UPPER_TO_LOWER_SPACE;
+                digitValue -= (int)DigitValue.UPPER_TO_LOWER_SPACE;
 
             return digitValue;
         }

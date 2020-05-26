@@ -5,3 +5,10 @@ G:\Code\C#\NumberConverter\NumberConverter\obj\Debug\NumberConverter.csprojAssem
 G:\Code\C#\NumberConverter\NumberConverter\obj\Debug\NumberConverter.csproj.CoreCompileInputs.cache
 G:\Code\C#\NumberConverter\NumberConverter\obj\Debug\NumberConverter.exe
 G:\Code\C#\NumberConverter\NumberConverter\obj\Debug\NumberConverter.pdb
+C:\Users\dhoss\Source\Repos\number-converter\NumberConverter\obj\Debug\NumberConverter.csprojAssemblyReference.cache
+C:\Users\dhoss\Source\Repos\number-converter\NumberConverter\obj\Debug\NumberConverter.csproj.CoreCompileInputs.cache
+C:\Users\dhoss\Source\Repos\number-converter\NumberConverter\obj\Debug\NumberConverter.exe
+C:\Users\dhoss\Source\Repos\number-converter\NumberConverter\obj\Debug\NumberConverter.pdb
+C:\Users\dhoss\Source\Repos\number-converter\NumberConverter\bin\Debug\NumberConverter.exe.config
+C:\Users\dhoss\Source\Repos\number-converter\NumberConverter\bin\Debug\NumberConverter.exe
+C:\Users\dhoss\Source\Repos\number-converter\NumberConverter\bin\Debug\NumberConverter.pdb

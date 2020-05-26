@@ -103,17 +103,17 @@ namespace NumberConverter
                 do
                 {
                     remainder = remainders.Pop();
-                    if (remainder >= DigitValue.START_ALPHA)
+                    if (remainder >= (int)DigitValue.START_ALPHA)
                     {
-                        if (remainder == DigitValue.PLUS_VALUE)
+                        if (remainder == (int)DigitValue.PLUS_VALUE)
                             output.Append(Number.PLUS_CHAR);
-                        else if (remainder == DigitValue.SLASH_VALUE)
+                        else if (remainder == (int)DigitValue.SLASH_VALUE)
                             output.Append(Number.SLASH_CHAR);
                         else
                         {
-                            remainder += DigitValue.NUMBER_TO_CHAR;
-                            if (remainder > DigitValue.UPPER_END)
-                                remainder += DigitValue.UPPER_TO_LOWER_SPACE;
+                            remainder += (int)DigitValue.NUMBER_TO_CHAR;
+                            if (remainder > (int)DigitValue.UPPER_END)
+                                remainder += (int)DigitValue.UPPER_TO_LOWER_SPACE;
                             output.Append((char)(remainder));
                         }
                     }
