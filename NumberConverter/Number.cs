@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace NumberConverter
 {
@@ -41,17 +42,20 @@ namespace NumberConverter
             Number number;
             char current;
             int digitValue;
+            Regex regex;
+            string pattern;
 
             if (value.Length > 0)
             {
+                pattern = @"[^\dA-Za-z\+/]";
+                regex = new Regex(pattern);
+                if (regex.IsMatch(value))
+                    throw new IllegalNumberException($"Illegal characters entered.");
                 for (int count = 0; count < value.Length; count++)
                 {
                     current = value[count];
                     if (inBase > 10)
                     {
-                        if (current != PLUS_CHAR && current != SLASH_CHAR && !char.IsDigit(current) && !char.IsLetter(current))
-                            throw new IllegalNumberException($"Illegal character for the given base: {current}");
-
                         digitValue = GetDigitValue(current);
                         if (digitValue >= inBase)
                             throw new IllegalNumberException($"Illegal digit for the given base: {current}");

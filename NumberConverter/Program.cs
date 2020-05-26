@@ -61,7 +61,7 @@ namespace NumberConverter
 
             do
             {
-                Console.Write("Enter the base to convert to (min {0}, max {1}:  ", MIN_BASE, MAX_BASE);
+                Console.Write("Enter the base to convert to (min {0}, max {1}):  ", MIN_BASE, MAX_BASE);
                 toBase = Convert.ToInt32(Console.ReadLine()); 
             } while (!IsValidBase(toBase));
 
