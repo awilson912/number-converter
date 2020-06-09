@@ -19,6 +19,68 @@ namespace NumberConverter
             return remainders;
         }
 
+        public static string ConvertAscii(string message, int toBase)
+        {
+            StringBuilder output;
+            Stack<int> remainders;
+            int decimalValue, remainder;
+
+            output = new StringBuilder();
+            for (int count = 0; count < message.Length; count++)
+            {
+                decimalValue = (int)message[count];
+                remainders = ConvertToBase(decimalValue, toBase);
+                do
+                {
+                    remainder = remainders.Pop();
+                    if (remainder >= (int)DigitValue.START_ALPHA)
+                    {
+                        if (remainder == (int)DigitValue.PLUS_VALUE)
+                            output.Append(Number.PLUS_CHAR);
+                        else if (remainder == (int)DigitValue.SLASH_VALUE)
+                            output.Append(Number.SLASH_CHAR);
+                        else
+                        {
+                            remainder += (int)DigitValue.NUMBER_TO_CHAR;
+                            if (remainder > (int)DigitValue.UPPER_END)
+                                remainder += (int)DigitValue.UPPER_TO_LOWER_SPACE;
+                            output.Append((char)(remainder));
+                        }
+                    }
+                    else
+                        output.Append(remainder);
+                } while (remainders.Count > 0);
+                if (count != message.Length - 1)
+                    output.Append(" ");
+            }
+
+            return output.ToString();
+        }
+
+        public static string ConvertToAscii(Number[] numbers)
+        {
+            StringBuilder ascii;
+
+            ascii = new StringBuilder();
+            foreach (Number number in numbers)
+                ascii.Append(ConvertToAscii(number));
+
+            return ascii.ToString();
+        }
+
+        public static string ConvertToAscii(Number number)
+        {
+            StringBuilder ascii;
+            int decimalValue;
+
+            decimalValue = ConvertToDecimal(number);
+            ascii = new StringBuilder();
+            ascii.Append((char)decimalValue);
+
+
+            return ascii.ToString();
+        }
+
         private static int ConvertToDecimal(Number number)
         {
             int sum, power, digitValue;
@@ -92,7 +154,7 @@ namespace NumberConverter
             return zero;
         }
 
-        public static string DigitToString(Stack<int> remainders, Number number, int toBase)
+        public static string DigitToString(Stack<int> remainders, Number number)
         {
             StringBuilder output;
             int remainder;

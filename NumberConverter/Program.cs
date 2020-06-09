@@ -7,8 +7,14 @@ namespace NumberConverter
     {
         public const int MIN_BASE = 2;
         public const int MAX_BASE = 64;
+
         public static void Main(string[] args)
         {
+            string message = "Internet Explorer is the best!";
+            int toBase = 2;
+
+            Console.WriteLine(BaseConverter.ConvertAscii(message, toBase));
+            /*
             Stack<int> stack;
             Number number;
             string value, output;
@@ -22,13 +28,14 @@ namespace NumberConverter
             {
                 number = Number.ParseNumber(value, fromBase);
                 stack = BaseConverter.Convert(number, toBase);
-                output = BaseConverter.DigitToString(stack, number, toBase);
+                output = BaseConverter.DigitToString(stack, number);
                 Console.WriteLine($"{number.Value} from base {number.Base} to base {toBase} is:  {output}");
             }
             catch (IllegalNumberException ex)
             {
                 Console.WriteLine(ex.Message);
             }
+            */
         }
 
         public static string GetValue()
